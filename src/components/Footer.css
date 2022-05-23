@@ -1,0 +1,27 @@
+.subtitle {
+  display: flex;
+  gap: 15px;
+}
+
+.subtitle-item {
+  cursor: pointer;
+}
+
+.subtitle-item:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+}
+
+.subtitle-item:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+.hovering:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
